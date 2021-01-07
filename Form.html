@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant Survey</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <header >Restaurant Survey</header>
+        <hr></hr>
+
+        <div class="content">
+            <div class="personalInfo">
+                <h3>Personal Information</h3>
+
+                <div class="perRow">
+                    <form>
+                        <label for="firstName">First Name: </label><br>
+                        <input type="text" id="firstName">
+                    </form>
+                    <form class="latterForm">
+                        <label for="lastName">Last Name: </label><br>
+                        <input type="text" id="lastName">
+                    </form>
+                </div>
+
+                <div class="perRow">
+                    <form>
+                        <label for="birthday">Birthday: </label><br>
+                        <input type="date" id="birthday">
+                    </form>
+                    <form class="latterForm">
+                        <label for="male">Gender:</label><br>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender">
+                        <label for="other">Other</label>
+                    </form>
+                </div>
+
+                <div class="perRow">
+                    <form>
+                        <label for="phoneNumber">Phone Number: </label><br>
+                        <input type="tel" id="phoneNumber" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </form>
+                    <form class="latterForm">
+                        <label for="email">Email: </label><br>
+                        <input type="email" id="email">
+                    </form>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="surveyQuestion">
+                <h3>Survey Questions</h3>
+
+                <div class="perRow">
+                    <form>
+                        <label for="mealA">1. What do you order today?</label><br><br>
+                        <input type="checkbox" id="mealA">
+                        <label for="mealA">Meal A</label>
+                        <input type="checkbox" id="mealB">
+                        <label for="mealB">Meal B</label>
+                        <input type="checkbox" id="mealC">
+                        <label for="mealC">Meal C</label>
+                    </form>
+                </div>
+
+                <div class="perRow">
+                    <form>
+                        <label for="one">2. How do you like today's server? (Low 1 > High 5)</label><br><br>
+                        <input type="radio" id="one" name="serverPoint">
+                        <label for="one">1</label>
+                        <input type="radio" id="two" name="serverPoint">
+                        <label for="otwone">2</label>
+                        <input type="radio" id="three" name="serverPoint">
+                        <label for="three">3</label>
+                        <input type="radio" id="four" name="serverPoint">
+                        <label for="four">4</label>
+                        <input type="radio" id="five" name="serverPoint">
+                        <label for="five">5</label>
+                    </form>
+                </div>
+
+                <div class="perRow">
+                    <form>
+                        <label for="one">3. Will you recommend other to our restaurant? (Low 1 > High 5)</label><br><br>
+                        <input type="radio" id="one" name="recommendPoint">
+                        <label for="one">1</label>
+                        <input type="radio" id="two" name="recommendPoint">
+                        <label for="otwone">2</label>
+                        <input type="radio" id="three" name="recommendPoint">
+                        <label for="three">3</label>
+                        <input type="radio" id="four" name="recommendPoint">
+                        <label for="four">4</label>
+                        <input type="radio" id="five" name="recommendPoint">
+                        <label for="five">5</label>
+                    </form>
+                </div>
+
+                <div class="perRow">
+                    <form>
+                        <label for="friend">4. How do you know our restaurant?</label><br><br>
+                        <input type="checkbox" id="friend" name="resource">
+                        <label for="friend">Friend</label>
+                        <input type="checkbox" id="tvCommercial" name="resource">
+                        <label for="tvCommercial">TV commercial</label>
+                        <input type="checkbox" id="internetAD" name="resource">
+                        <label for="internetAD">Internet ad</label>
+                        <input type="checkbox" id="googleSearch" name="resource">
+                        <label for="googleSearch">Google Search</label>
+                    </form>
+                </div>
+
+                <div class="perRow">
+                    <form>
+                        <label for="advise">5. Other advise for us?</label><br><br>
+                        <textarea id="advise" name="advise" rows="8" cols="85"></textarea><br><br>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <h2>Thanks for your feedback! We hope you have a nice day!</h2>
+        </div>
+    </body>
+</html>

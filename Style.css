@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(209, 209, 209);
+}
+
+header{
+    font-size: 100px;
+    background-color: rgb(60, 121, 253);
+    color: white;
+    padding: 1%;
+}
+
+.perRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 3%;
+}
+
+.latterForm{
+    margin-left: 3%;
+}
